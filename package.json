@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.3"
+  },
+  "scripts": {
+    "dev": "json-server ./mocks/db.json"
+  },
+  "dependencies": {
+    "json-server-auth": "^2.1.0"
+  }
+}
