@@ -1,0 +1,43 @@
+/* CORES CUSTOMIZADAS - ATTACK ON TITAN */
+      body {
+        background-color: #2f4f3e; /* Verde Capa */
+        color: #f0f0f0;
+      }
+      
+      /* Classe utilitária para o Marrom (Couro/Jaqueta) */
+      .bg-scout-brown {
+        background-color: #5a4634 !important;
+        color: white;
+      }
+
+      /* Estilizando as Abas para combinar com o fundo verde */
+      .nav-tabs { border-bottom: 1px solid #5a4634; }
+      .nav-tabs .nav-link { color: #ccc; }
+      .nav-tabs .nav-link:hover { border-color: #5a4634; color: white; }
+      
+      /* Aba Ativa: Fica marrom */
+      .nav-tabs .nav-link.active {
+        background-color: #5a4634;
+        color: white;
+        border-color: #5a4634 #5a4634 #2f4f3e;
+      }
+
+      /* Cards e Accordions */
+      .card, .accordion-item, .modal-content {
+        background-color: #5a4634;
+        color: white;
+        border: 1px solid rgba(0,0,0,0.2);
+      }
+      
+      /* Ajuste do Accordion quando expandido */
+      .accordion-button {
+        background-color: #4a3a2a; /* Um marrom um pouco mais escuro */
+        color: white;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #3d2f22;
+        color: white;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+      }
+      /* Remove o icone azul padrão do accordion e deixa branco */
+      .accordion-button::after { filter: invert(1); }

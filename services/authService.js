@@ -13,7 +13,8 @@ export const registerUser = async (nameUser, password, regimento) => {
 
     if (response.status === 201) {
         sessionStorage.setItem('isAuthenticated', 'ok');
-        window.location.href = './index.html';
+        sessionStorage.setItem('username', nameUser);
+        window.location.href = '../index.html';
     }
 }
 
@@ -31,10 +32,11 @@ export const login = async (nameUser, passwordUser, regimentoUser) => {
     });
     if (response.status == 200) {
         sessionStorage.setItem('isAuthenticated', 'ok');
-        window.location.href = '/index.html';
+        sessionStorage.setItem('username', nameUser);
+        window.location.href = '../index.html';
     }
     else {
-        console.log(response.value)
+        console.log(response)
     }
     return response.value;
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Missão</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/createMission.css" />
+  </head>
+  <body>
+    <div class="card p-4" style="width: 100%; max-width: 500px">
+      <div class="text-center mb-4">
+        <h4 class="fw-bold">⚔️ Nova Missão</h4>
+        <small class="text-secondary"
+          >Defina o objetivo para o próximo nível</small
+        >
+      </div>
+
+      <form id="form-missao">
+        <div class="mb-3">
+          <label for="inputNome" class="form-label nomeMissaoInput">Nome da Missão</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNome"
+            placeholder="Ex: Derrotar o Boss Final"
+            required
+          />
+        </div>
+
+        <div class="mb-3"> 
+          <label for="inputDescricao" class="form-label inputDescricao">Descrição</label>
+          <textarea
+            class="form-control"
+            id="inputDescricao"
+            rows="3"
+            placeholder="Detalhes da estratégia..."
+            required
+          ></textarea>
+        </div>
+        <div class="d-flex gap-2">
+          <button
+            type="submit"
+            class="btn btn-primary w-100 py-2 fw-bold botaoCadastrar"
+          >
+            Cadastrar Missão
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger w-50 fw-bold botaoCancelar"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../dom/createMission.js" type="module"></script>
+  </body>
+</html>
