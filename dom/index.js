@@ -56,7 +56,6 @@ const renderizarMissoes = async () => {
 listaMissoes.addEventListener('click', async (event) => {
     const botao = event.target
 
-    if (!botao.classList.contains('botao-excluir')) return
 
     const id = botao.dataset.id
     console.log('clicou para excluir missão', id)
@@ -69,5 +68,4 @@ listaMissoes.addEventListener('click', async (event) => {
     renderizarMissoes(buscarMissoes())
 })
 renderizarMissoes(buscarMissoes)
-
 

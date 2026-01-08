@@ -9,7 +9,6 @@ botaoCancelar.addEventListener('click', () => {
 
 botaoCadastrar.addEventListener('click', async (e) => {
     e.preventDefault()
-    console.log("clicando ni mim")
     const nomeMissaoInput = document.querySelector('#inputNome').value
     const descricao = document.querySelector('#inputDescricao').value
     const novaMissao = await cadastrarMissao(nomeMissaoInput, descricao)
